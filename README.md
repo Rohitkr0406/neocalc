@@ -2,7 +2,7 @@
 
 A modern **calculator web app** built with **HTML, JavaScript, and Tailwind CSS**. It features a clean UI, light/dark mode toggle, neumorphic button styling, and smooth interactions.
 
-### 🔗 Netify try link : 
+### 🔗 Github try link : (https://rohitkr0406.github.io/neocalc/)
 
 ---
 
