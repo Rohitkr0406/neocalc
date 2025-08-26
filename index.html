@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Calculator UI</title>
+	<link rel="stylesheet" href="dist/style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link rel="shortcut icon" href="https://img.icons8.com/external-prettycons-solid-prettycons/60/F97316/external-calculator-essentials-prettycons-solid-prettycons.png" type="image/x-icon">
+
+</head>
+
+<body class="flex h-screen md:h-screen items-center justify-center bg-[linear-gradient(45deg,_#262634_0%,_#262634_30%,_#F97316_30%,_#F97316_100%)] bg-cover bg-no-repeat bg-center">
+	<div class="calc-container h-screen md:h-5/6 dark-theme transition-all duration-200 ease-in-out shadow-2xl shadow-slate-950">
+
+		<!-- Header -->
+		<div class="calculator-header flex gap-2 justify-center">
+			<!-- <button class="btn-circle">
+				<span style="font-size: 32px;"
+					class="material-symbols-outlined text-orange-500">keyboard_arrow_left</span>
+			</button> -->
+
+			<div class="toggle-container cursor-pointer relative transition-colors duration-300 ease-in-out"
+				id="theme-toggle">
+				<div id="toggle-knob"
+					class="absolute left-3 w-9 h-9 bg-orange-500 flex items-center justify-center transition-all px-1 rounded-full duration-300 ease-in-out">
+					<span id="toggle-icon" class="material-symbols-outlined text-2xl">bedtime</span>
+				</div>
+
+				<div class="flex justify-between items-center w-full px-3 text-gray-400">
+					<span class="material-symbols-outlined text-lg">bedtime</span>
+					<span class="material-symbols-outlined text-lg">sunny</span>
+				</div>
+			</div>	
+
+
+			<!-- will add this functionality later if asked -->
+			<!-- <button class="btn-circle">
+				<span class="material-symbols-outlined text-orange-500">more_vert</span>
+			</button> -->
+		</div>
+
+		<!-- Screen -->
+		<div class="calculator-main">
+			<div class="calculator-screen text-right mb-6">
+				<span class="block text-5xl font-light break-words">0</span>
+				<span class="block text-2xl text-gray-400">= 0</span>
+			</div>
+
+			<!-- Keypad -->
+			<div class="calculator-keypad grid grid-cols-4 gap-5 text-2xl">
+				<button class="btn-op" data-key="AC">AC</button>
+				<button class="btn-op" data-key="backspace"><span
+						class="material-symbols-outlined flex justify-center items-center text-3xl">backspace</span></button>
+				<button class="btn-op" data-key="%">%</button>
+				<button class="btn-op text-4xl" data-key="÷">÷</button>
+
+				<button class="btn-num" data-key="7">7</button>
+				<button class="btn-num" data-key="8">8</button>
+				<button class="btn-num" data-key="9">9</button>
+				<button class="btn-op" data-key="×">×</button>
+
+				<button class="btn-num" data-key="4">4</button>
+				<button class="btn-num" data-key="5">5</button>
+				<button class="btn-num" data-key="6">6</button>
+				<button class="btn-op" data-key="−">−</button>
+
+				<button class="btn-num" data-key="1">1</button>
+				<button class="btn-num" data-key="2">2</button>
+				<button class="btn-num" data-key="3">3</button>
+				<button class="btn-op" data-key="+">+</button>
+
+				<button class="btn-num col-span-2" data-key="0">0</button>
+				<button class="btn-num" data-key=".">.</button>
+				<button class="btn-equal" data-key="=">=</button>
+			</div>
+		</div>
+	</div>
+	<script src="src/script.js"></script>
+</body>
+
+
+</html>
